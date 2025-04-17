@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Split View",
+    "version": "1.0",
+    "description": "Advanced split view with resizable panes, multiple layouts, and sync features",
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "permissions": ["scripting", "activeTab", "storage"],
+    "host_permissions": ["<all_urls>"],
+    "commands": {
+      "toggle-split-view": {
+        "suggested_key": {
+          "default": "Ctrl+Shift+S",
+          "mac": "Command+Shift+S"
+        },
+        "description": "Toggle Split View"
+      }
+    },
+    "background": {
+      "service_worker": "background.js"
+    }
+  }

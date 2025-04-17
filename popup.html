@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { width: 250px; padding: 10px; font-family: sans-serif; }
+    .setting { margin: 10px 0; }
+    input[type="color"] { vertical-align: middle; }
+  </style>
+</head>
+<body>
+  <button id="toggle">Toggle Split View</button>
+  
+  <div class="setting">
+    <label>
+      <input type="checkbox" id="syncScroll"> Sync scrolling
+    </label>
+  </div>
+
+  <div class="setting">
+    <label>
+      <input type="checkbox" id="syncNavigation"> Sync navigation
+    </label>
+  </div>
+
+  <div class="setting">
+    <button id="switchLayout">Switch Layout</button>
+  </div>
+
+  <div class="setting">
+    <label>
+      Divider width: 
+      <input type="number" id="dividerWidth" min="1" max="20" style="width: 60px;">
+    </label>
+  </div>
+
+  <div class="setting">
+    <label>
+      Divider color:
+      <input type="color" id="dividerColor">
+    </label>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
